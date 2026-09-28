@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>سوق السودان | متجر إلكتروني</title>
+    <meta
+      name="description"
+      content="موقع متجر إلكتروني سوداني لبيع المنتجات المحلية والعالمية بأسعار مناسبة."
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="navbar container">
+        <div class="logo">
+          <span class="logo-icon">س</span>
+          سوق السودان
+        </div>
+
+        <div class="nav-links">
+          <a href="#home">الرئيسية</a>
+          <a href="#categories">الفئات</a>
+          <a href="#products">المنتجات</a>
+          <a href="#offers">العروض</a>
+          <a href="#contact">تواصل معنا</a>
+        </div>
+
+        <div class="nav-actions">
+          <button class="btn btn-outline">تسجيل الدخول</button>
+          <button class="btn btn-primary">
+            السلة
+            <span id="cart-count">0</span>
+          </button>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="home">
+        <div class="container hero-content">
+          <div class="hero-text">
+            <span class="badge">توصيل سريع داخل المدن الكبرى</span>
+            <h1>اشتري كل ما تحتاجه من سوق السودان</h1>
+            <p>
+              منتجات غذائية، أزياء، إلكترونيات، مستلزمات منزلية، ومنتجات محلية
+              بجودة عالية وأسعار مناسبة.
+            </p>
+
+            <div class="hero-search">
+              <input type="text" placeholder="ابحث عن منتج..." />
+              <button>بحث</button>
+            </div>
+
+            <div class="stats">
+              <div>
+                <strong>10k+</strong>
+                <span>عميل سعيد</span>
+              </div>
+              <div>
+                <strong>500+</strong>
+                <span>منتج</span>
+              </div>
+              <div>
+                <strong>24/7</strong>
+                <span>خدمة عملاء</span>
+              </div>
+            </div>
+          </div>
+
+          <div class="hero-visual">
+            <div class="product-card featured">
+              <img
+                src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=80"
+                alt="منتجات سوق"
+              />
+              <div class="price-badge">خصم 30%</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <section class="categories container" id="categories">
+        <div class="section-title">
+          <span>فئاتنا</span>
+          <h2>تسوق حسب احتياجك</h2>
+        </div>
+
+        <div class="category-list">
+          <button class="category-btn active" data-category="all">الكل</button>
+          <button class="category-btn" data-category="food">مواد غذائية</button>
+          <button class="category-btn" data-category="electronics">إلكترونيات</button>
+          <button class="category-btn" data-category="fashion">أزياء</button>
+          <button class="category-btn" data-category="home">منزل</button>
+          <button class="category-btn" data-category="beauty">جمال</button>
+        </div>
+      </section>
+
+      <section class="products container" id="products">
+        <div class="section-title">
+          <span>منتجات مميزة</span>
+          <h2>أشهر المنتجات</h2>
+        </div>
+
+        <div class="products-grid" id="products-grid"></div>
+      </section>
+
+      <section class="offers container" id="offers">
+        <div class="offer-banner">
+          <div>
+            <span>عرض خاص</span>
+            <h3>خصم يصل إلى 50% على منتجات المنزل</h3>
+          </div>
+          <button class="btn btn-primary">تسوق الآن</button>
+        </div>
+      </section>
+
+      <section class="features container">
+        <div class="section-title">
+          <span>مميزتنا</span>
+          <h2>لماذا يختار الناس سوق السودان؟</h2>
+        </div>
+
+        <div class="features-grid">
+          <div class="feature-card">
+            <div class="icon">🚚</div>
+            <h3>توصيل سريع</h3>
+            <p>خدمة توصيل في نفس اليوم في المدن الرئيسية.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="icon">💳</div>
+            <h3>دفع آمن</h3>
+            <p>مراسلات موثوقة ودفع مباشر مع حماية كاملة.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="icon">🏷️</div>
+            <h3>أسعار مناسبة</h3>
+            <p>خصومات مستمرة وعروض تنافسية على المنتجات المحلية.</p>
+          </div>
+
+          <div class="feature-card">
+            <div class="icon">⭐</div>
+            <h3>جودة مضمونة</h3>
+            <p>نقدم منتجات موثوقة من أفضل الموردين.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class="testimonials container">
+        <div class="section-title">
+          <span>آراء العملاء</span>
+          <h2>ماذا يقول عملاؤنا؟</h2>
+        </div>
+
+        <div class="testimonial-grid">
+          <article class="testimonial">
+            <p>
+              “سهلت علينا التسوق كثيرًا، والطعم الحقيقي والمنتجات أصلية
+              وأسعاره مناسبة جدًا.”
+            </p>
+            <div class="user">
+              <strong>أماني محمد</strong>
+              <span>الخرطوم</span>
+            </div>
+          </article>
+
+          <article class="testimonial">
+            <p>
+              “التوصيل سريع جدًا، خاصة في منتجات المنزل، والخدمة ممتازة
+              جدًا.”
+            </p>
+            <div class="user">
+              <strong>عمر حمد</strong>
+              <span>أم درمان</span>
+            </div>
+          </article>
+
+          <article class="testimonial">
+            <p>
+              “جميل جدًا، واجهة الموقع سهلة والألوان ممتازة، والمنتجات
+              متنوعة.”
+            </p>
+            <div class="user">
+              <strong>سارة عبدالله</strong>
+              <span>الدمازين</span>
+            </div>
+          </article>
+        </div>
+      </section>
+    </main>
+
+    <footer class="footer" id="contact">
+      <div class="container footer-content">
+        <div>
+          <div class="logo">
+            <span class="logo-icon">س</span>
+            سوق السودان
+          </div>
+          <p>متجر إلكتروني سوداني يربط بين المتسوقين والموردين بكل راحة.</p>
+        </div>
+
+        <div>
+          <h4>روابط سريعة</h4>
+          <ul>
+            <li><a href="#home">الرئيسية</a></li>
+            <li><a href="#products">المنتجات</a></li>
+            <li><a href="#offers">العروض</a></li>
+            <li><a href="#contact">تواصل معنا</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4>تواصل معنا</h4>
+          <ul>
+            <li>📍 الخرطوم، السودان</li>
+            <li>📞 +249 123 456 789</li>
+            <li>✉️ info@sudansouq.com</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="copyright">© 2026 سوق السودان. جميع الحقوق محفوظة.</div>
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
