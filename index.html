@@ -3,10 +3,10 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>سوق السودان | متجر إلكتروني</title>
+    <title>سوق السودان | منصة بيع وشراء موثوقة</title>
     <meta
       name="description"
-      content="موقع متجر إلكتروني سوداني لبيع المنتجات المحلية والعالمية بأسعار مناسبة."
+      content="منصة سوق سوداني آمنة لبيع وشراء المنتجات مع إشعارات نقل الأموال والتحقق من الاحتيال."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -17,212 +17,383 @@
     <link rel="stylesheet" href="styles.css" />
   </head>
   <body>
-    <header class="header">
-      <nav class="navbar container">
-        <div class="logo">
-          <span class="logo-icon">س</span>
-          سوق السودان
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand-wrap">
+          <div class="logo">س</div>
+          <div>
+            <div class="brand-name">سوق السودان</div>
+            <div class="brand-tag">بيع وشراء آمن</div>
+          </div>
         </div>
 
-        <div class="nav-links">
+        <nav class="main-nav">
           <a href="#home">الرئيسية</a>
-          <a href="#categories">الفئات</a>
-          <a href="#products">المنتجات</a>
-          <a href="#offers">العروض</a>
-          <a href="#contact">تواصل معنا</a>
-        </div>
+          <a href="#listings">الإعلانات</a>
+          <a href="#how">كيف يعمل</a>
+          <a href="#security">الأمان</a>
+          <a href="#fees">الرسوم</a>
+        </nav>
 
         <div class="nav-actions">
-          <button class="btn btn-outline">تسجيل الدخول</button>
-          <button class="btn btn-primary">
-            السلة
-            <span id="cart-count">0</span>
-          </button>
+          <a class="btn btn-light" href="login.html">تسجيل الدخول</a>
+          <a class="btn btn-primary" href="add-listing.html">+ أضف إعلانك</a>
         </div>
-      </nav>
+      </div>
     </header>
 
-    <main>
-      <section class="hero" id="home">
-        <div class="container hero-content">
-          <div class="hero-text">
-            <span class="badge">توصيل سريع داخل المدن الكبرى</span>
-            <h1>اشتري كل ما تحتاجه من سوق السودان</h1>
+    <main id="home">
+      <section class="hero">
+        <div class="container hero-grid">
+          <div class="hero-copy">
+            <span class="badge">قريبًا من كل مدينة سودانية</span>
+            <h1>متجر سوداني موثوق لبيع وشراء كل ما تريد</h1>
             <p>
-              منتجات غذائية، أزياء، إلكترونيات، مستلزمات منزلية، ومنتجات محلية
-              بجودة عالية وأسعار مناسبة.
+              من خلال منصة سوق السودان، يمكنك بيع هاتف، سيارة، أثاث، أجهزة، أو أي
+              منتج بطريقة آمنة وموثوقة، مع التواصل عبر الهاتف أو واتساب، ورفع
+              التحويل البنكي والرسوم الرسمية للموقع.
             </p>
 
-            <div class="hero-search">
-              <input type="text" placeholder="ابحث عن منتج..." />
+            <div class="search-box">
+              <input type="text" placeholder="ابحث عن هاتف، سيارة، أثاث، منزلي..." />
               <button>بحث</button>
             </div>
 
-            <div class="stats">
+            <div class="hero-stats">
               <div>
-                <strong>10k+</strong>
-                <span>عميل سعيد</span>
+                <strong>12k+</strong>
+                <span>إعلان فعال</span>
               </div>
               <div>
-                <strong>500+</strong>
-                <span>منتج</span>
+                <strong>99.8%</strong>
+                <span>موثوقية</span>
               </div>
               <div>
                 <strong>24/7</strong>
-                <span>خدمة عملاء</span>
+                <span>دعم فني</span>
               </div>
             </div>
           </div>
 
           <div class="hero-visual">
-            <div class="product-card featured">
+            <div class="floating-card card-1">
+              <span>إعلان مميز</span>
+              <h3>هاتف آيفون 13 برو</h3>
+              <strong>١٨٠٠٠ جنيه سوداني</strong>
+            </div>
+
+            <div class="floating-card card-2">
+              <span>تحويل موثوق</span>
+              <h3>تمت مراجعة التحويل</h3>
+              <strong>معتمد // بنك الخرطوم</strong>
+            </div>
+
+            <div class="product-showcase">
               <img
-                src="https://images.unsplash.com/photo-1542838132-92c53300491e?auto=format&fit=crop&w=900&q=80"
-                alt="منتجات سوق"
+                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=1200&q=80"
+                alt="إعلان هاتف"
               />
-              <div class="price-badge">خصم 30%</div>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="categories container" id="categories">
-        <div class="section-title">
-          <span>فئاتنا</span>
-          <h2>تسوق حسب احتياجك</h2>
-        </div>
-
-        <div class="category-list">
-          <button class="category-btn active" data-category="all">الكل</button>
-          <button class="category-btn" data-category="food">مواد غذائية</button>
-          <button class="category-btn" data-category="electronics">إلكترونيات</button>
-          <button class="category-btn" data-category="fashion">أزياء</button>
-          <button class="category-btn" data-category="home">منزل</button>
-          <button class="category-btn" data-category="beauty">جمال</button>
+      <section class="trusted-bar">
+        <div class="container trusted-row">
+          <div>تسليم آمن</div>
+          <div>تحويل بنكي</div>
+          <div>حماية من الاحتيال</div>
+          <div>تواصل مباشر</div>
         </div>
       </section>
 
-      <section class="products container" id="products">
-        <div class="section-title">
-          <span>منتجات مميزة</span>
-          <h2>أشهر المنتجات</h2>
-        </div>
-
-        <div class="products-grid" id="products-grid"></div>
-      </section>
-
-      <section class="offers container" id="offers">
-        <div class="offer-banner">
+      <section class="listings container" id="listings">
+        <div class="section-header">
           <div>
-            <span>عرض خاص</span>
-            <h3>خصم يصل إلى 50% على منتجات المنزل</h3>
+            <span class="mini-label">أحدث الإعلانات</span>
+            <h2>اكتشف منتجات اليوم</h2>
           </div>
-          <button class="btn btn-primary">تسوق الآن</button>
+          <a href="add-listing.html" class="btn btn-primary">إضافة إعلان</a>
+        </div>
+
+        <div class="product-grid">
+          <article class="product-card">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1511707171634-5f897ff02aa9?auto=format&fit=crop&w=900&q=80"
+                alt="هاتف"
+              />
+              <span class="tag">مميز</span>
+            </div>
+            <div class="product-body">
+              <div class="price-row">
+                <strong>18,000 ج.س</strong>
+                <span>هاتف</span>
+              </div>
+              <h3>آيفون 13 برو</h3>
+              <p>حالة ممتازة، شاشة أصلية، بطارية 88%.</p>
+              <div class="meta-row">
+                <span>📍 الخرطوم</span>
+                <span>🕒 منذ 3 ساعات</span>
+              </div>
+              <div class="seller-row">
+                <div>
+                  <strong>أحمد</strong>
+                  <small>بائع موثوق</small>
+                </div>
+                <a href="product.html" class="btn btn-ghost">تفاصيل</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1524758631624-e2822e304c36?auto=format&fit=crop&w=900&q=80"
+                alt="أثاث"
+              />
+              <span class="tag">تخفيض</span>
+            </div>
+            <div class="product-body">
+              <div class="price-row">
+                <strong>7,500 ج.س</strong>
+                <span>أثاث</span>
+              </div>
+              <h3>مجموعة غرفة نوم</h3>
+              <p>مجموعة صالحة، نضيفة، مناسبة للمنزل أو الشقق.</p>
+              <div class="meta-row">
+                <span>📍 أم درمان</span>
+                <span>🕒 منذ يوم</span>
+              </div>
+              <div class="seller-row">
+                <div>
+                  <strong>سارة</strong>
+                  <small>موزعة</small>
+                </div>
+                <a href="product.html" class="btn btn-ghost">تفاصيل</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1556740749-887f6717d7e4?auto=format&fit=crop&w=900&q=80"
+                alt="سيارة"
+              />
+              <span class="tag">رائج</span>
+            </div>
+            <div class="product-body">
+              <div class="price-row">
+                <strong>1,450,000 ج.س</strong>
+                <span>سيارة</span>
+              </div>
+              <h3>سيارة تويوتا هيلكس</h3>
+              <p>موديل 2018، شبح، حالتها ممتازة، مستعملة جيدة.</p>
+              <div class="meta-row">
+                <span>📍 بورتسودان</span>
+                <span>🕒 منذ 5 ساعات</span>
+              </div>
+              <div class="seller-row">
+                <div>
+                  <strong>محمود</strong>
+                  <small>مُعلن موثوق</small>
+                </div>
+                <a href="product.html" class="btn btn-ghost">تفاصيل</a>
+              </div>
+            </div>
+          </article>
+
+          <article class="product-card">
+            <div class="product-image">
+              <img
+                src="https://images.unsplash.com/photo-1542291026-7eec264c27ff?auto=format&fit=crop&w=900&q=80"
+                alt="حذاء"
+              />
+              <span class="tag">جديد</span>
+            </div>
+            <div class="product-body">
+              <div class="price-row">
+                <strong>1,200 ج.س</strong>
+                <span>ملابس</span>
+              </div>
+              <h3>حذاء ريا��ي ممتاز</h3>
+              <p>مقاس 40، أصلي، مناسب للتمارين والمشي اليومي.</p>
+              <div class="meta-row">
+                <span>📍 بحري</span>
+                <span>🕒 منذ 6 ساعات</span>
+              </div>
+              <div class="seller-row">
+                <div>
+                  <strong>فاطمة</strong>
+                  <small>مراجعة سريعة</small>
+                </div>
+                <a href="product.html" class="btn btn-ghost">تفاصيل</a>
+              </div>
+            </div>
+          </article>
         </div>
       </section>
 
-      <section class="features container">
-        <div class="section-title">
-          <span>مميزتنا</span>
-          <h2>لماذا يختار الناس سوق السودان؟</h2>
-        </div>
-
-        <div class="features-grid">
-          <div class="feature-card">
-            <div class="icon">🚚</div>
-            <h3>توصيل سريع</h3>
-            <p>خدمة توصيل في نفس اليوم في المدن الرئيسية.</p>
+      <section class="how-it-works" id="how">
+        <div class="container">
+          <div class="section-header center">
+            <div>
+              <span class="mini-label">كيف يعمل</span>
+              <h2>خطوات سهلة وآمنة</h2>
+            </div>
           </div>
 
-          <div class="feature-card">
-            <div class="icon">💳</div>
-            <h3>دفع آمن</h3>
-            <p>مراسلات موثوقة ودفع مباشر مع حماية كاملة.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="icon">🏷️</div>
-            <h3>أسعار مناسبة</h3>
-            <p>خصومات مستمرة وعروض تنافسية على المنتجات المحلية.</p>
-          </div>
-
-          <div class="feature-card">
-            <div class="icon">⭐</div>
-            <h3>جودة مضمونة</h3>
-            <p>نقدم منتجات موثوقة من أفضل الموردين.</p>
+          <div class="steps-grid">
+            <div class="step-box">
+              <span>01</span>
+              <h3>أنشئ حسابك</h3>
+              <p>سجل دخولك باستخدام رقم هاتفك أو بريدك الإلكتروني.</p>
+            </div>
+            <div class="step-box">
+              <span>02</span>
+              <h3>أضف إعلانك</h3>
+              <p>ارفع الصور، وصف المنتج، والسعر وبيانات التواصل.</p>
+            </div>
+            <div class="step-box">
+              <span>03</span>
+              <h3>ادفع رسوم الموقع</h3>
+              <p>دفع 300 جنيه سوداني عبر تحويل بنكي أو حسابات موثوقة.</p>
+            </div>
+            <div class="step-box">
+              <span>04</span>
+              <h3>تواصل مع المشتري</h3>
+              <p>يستطيع العميل التواصل عبر واتساب أو الهاتف مباشرة.</p>
+            </div>
           </div>
         </div>
       </section>
 
-      <section class="testimonials container">
-        <div class="section-title">
-          <span>آراء العملاء</span>
-          <h2>ماذا يقول عملاؤنا؟</h2>
+      <section class="security" id="security">
+        <div class="container security-grid">
+          <div>
+            <span class="mini-label">الأمان</span>
+            <h2>حماية من الاحتيال والتقليل من الخداع</h2>
+            <p>
+              كل تحويل أو إبلاغ جديد يمر عبر نظام مراقبة ذكي يراجع اسم المرسل، رقم
+              الهاتف، القيمة، وتوقيت التحويل. إذا تبين وجود شكوك، يرسل النظام تنبيهًا
+              إلى المؤسسة ويطلب التحقق الإضافي قبل اعتماد الصفقة.
+            </p>
+
+            <ul class="check-list">
+              <li>تقييم الحسابات والتأكد من الموثوقية</li>
+              <li>إشعارات فورية عند تحويل الأموال</li>
+              <li>التواصل المباشر عبر واتساب أو الهاتف</li>
+              <li>برامج تحذير فورية من الاحتيال</li>
+            </ul>
+          </div>
+
+          <div class="alert-card">
+            <div class="alert-header">
+              <span class="dot green"></span>
+              <strong>AI Fraud Monitor</strong>
+            </div>
+
+            <div class="risk-level">مستوى المخاطر: منخفض</div>
+            <div class="alert-box safe">
+              <span>✅ لا توجد مؤشرات احتيال</span>
+              <small>مبلغ التحويل مطابق للسعر المعلن.</small>
+            </div>
+            <div class="alert-box warning">
+              <span>⚠️ تنبيه تلقائي</span>
+              <small>إذا غُير رقم الحساب أو تأخر التوقيت أكثر من 12 ساعة، يتم تنبيه المدير.</small>
+            </div>
+            <div class="alert-box info">
+              <span>ℹ️ تم ربط التحويل</span>
+              <small>التحويل مصدّق عبر بنك الخرطوم / أي بنك سوداني موثوق.</small>
+            </div>
+          </div>
         </div>
+      </section>
 
-        <div class="testimonial-grid">
-          <article class="testimonial">
-            <p>
-              “سهلت علينا التسوق كثيرًا، والطعم الحقيقي والمنتجات أصلية
-              وأسعاره مناسبة جدًا.”
-            </p>
-            <div class="user">
-              <strong>أماني محمد</strong>
-              <span>الخرطوم</span>
+      <section class="fees" id="fees">
+        <div class="container">
+          <div class="section-header center">
+            <div>
+              <span class="mini-label">الرسوم</span>
+              <h2>رسوم الموقع والتسوية</h2>
             </div>
-          </article>
+          </div>
 
-          <article class="testimonial">
-            <p>
-              “التوصيل سريع جدًا، خاصة في منتجات المنزل، والخدمة ممتازة
-              جدًا.”
-            </p>
-            <div class="user">
-              <strong>عمر حمد</strong>
-              <span>أم درمان</span>
+          <div class="fees-grid">
+            <div class="fee-card featured">
+              <span class="fee-badge">الرسوم الرسمية</span>
+              <h3>300 جنيه سوداني</h3>
+              <p>رسوم اعتماد الإعلان أو معالجة الصفقة</p>
+              <ul>
+                <li>تأكيد الإعلان</li>
+                <li>تثبيت الصفقة</li>
+                <li>تفعيل التواصل الآمن</li>
+                <li>أمان ودعم</li>
+              </ul>
             </div>
-          </article>
 
-          <article class="testimonial">
-            <p>
-              “جميل جدًا، واجهة الموقع سهلة والألوان ممتازة، والمنتجات
-              متنوعة.”
-            </p>
-            <div class="user">
-              <strong>سارة عبدالله</strong>
-              <span>الدمازين</span>
+            <div class="fee-card">
+              <span class="fee-badge alt">الدفع البنكي</span>
+              <h3>بنك الخرطوم</h3>
+              <p>رقم الهاتف: 0927154913</p>
+              <div class="bank-box">
+                <strong>اسم الحساب:</strong>
+                <span>سوق السودان</span>
+                <strong>نوع الحساب:</strong>
+                <span>حساب تجاري</span>
+              </div>
             </div>
-          </article>
+
+            <div class="fee-card">
+              <span class="fee-badge alt">التحقق</span>
+              <h3>التنبيهات</h3>
+              <p>نقوم بإرسال تنبيه فوري عند كل تحويل أو تأكيد.</p>
+              <div class="status-row">
+                <span class="dot green"></span>
+                <small>التحويل موثق</small>
+              </div>
+              <div class="status-row">
+                <span class="dot orange"></span>
+                <small>مراجعة تلقائية</small>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
 
-    <footer class="footer" id="contact">
-      <div class="container footer-content">
+    <footer class="site-footer">
+      <div class="container footer-grid">
         <div>
-          <div class="logo">
-            <span class="logo-icon">س</span>
-            سوق السودان
+          <div class="brand-wrap footer-brand">
+            <div class="logo">س</div>
+            <div>
+              <div class="brand-name">سوق السودان</div>
+              <div class="brand-tag">بيع وشراء آمن</div>
+            </div>
           </div>
-          <p>متجر إلكتروني سوداني يربط بين المتسوقين والموردين بكل راحة.</p>
+          <p>
+            منصة سودانية جديدة تجمع بين البيع والشراء بمرونة، أمان، وثقة عالية.
+          </p>
         </div>
 
         <div>
-          <h4>روابط سريعة</h4>
+          <h4>روابط</h4>
           <ul>
             <li><a href="#home">الرئيسية</a></li>
-            <li><a href="#products">المنتجات</a></li>
-            <li><a href="#offers">العروض</a></li>
-            <li><a href="#contact">تواصل معنا</a></li>
+            <li><a href="#listings">الإعلانات</a></li>
+            <li><a href="#security">الأمان</a></li>
+            <li><a href="#fees">الرسوم</a></li>
           </ul>
         </div>
 
         <div>
-          <h4>تواصل معنا</h4>
+          <h4>تواصل</h4>
           <ul>
-            <li>📍 الخرطوم، السودان</li>
-            <li>📞 +249 123 456 789</li>
-            <li>✉️ info@sudansouq.com</li>
+            <li>📞 0927154913</li>
+            <li>💬 واتساب</li>
+            <li>📍 السودان</li>
           </ul>
         </div>
       </div>

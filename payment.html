@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>دفع الرسوم | سوق السودان</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;600;700;800&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header class="topbar">
+      <div class="container nav">
+        <div class="brand-wrap">
+          <div class="logo">س</div>
+          <div>
+            <div class="brand-name">سوق السودان</div>
+            <div class="brand-tag">بيع وشراء آمن</div>
+          </div>
+        </div>
+        <div class="nav-actions">
+          <a class="btn btn-light" href="index.html">الرئيسية</a>
+        </div>
+      </div>
+    </header>
+
+    <main class="form-shell">
+      <section class="payment-box">
+        <div class="form-header">
+          <h2>دفع رسو م الموقع</h2>
+          <p>قيمة الرسوم: 300 جنيه سوداني</p>
+        </div>
+
+        <div class="bank-details">
+          <div class="bank-row">
+            <strong>البنك:</strong>
+            <span>بنك الخرطوم</span>
+          </div>
+          <div class="bank-row">
+            <strong>رقم الهاتف:</strong>
+            <span>0927154913</span>
+          </div>
+          <div class="bank-row">
+            <strong>اسم الحساب:</strong>
+            <span>سوق السودان</span>
+          </div>
+        </div>
+
+        <form id="payment-form">
+          <div class="form-group">
+            <label for="transferName">اسم المحول</label>
+            <input id="transferName" type="text" placeholder="أحمد محمد" required />
+          </div>
+
+          <div class="inline-row">
+            <div class="form-group">
+              <label for="bankName">اسم البنك</label>
+              <input id="bankName" type="text" placeholder="بنك الخرطوم" required />
+            </div>
+
+            <div class="form-group">
+              <label for="amount">المبلغ (ج.س)</label>
+              <input id="amount" type="number" value="300" required />
+            </div>
+          </div>
+
+          <button class="btn btn-primary primary-btn-wide" type="submit">إرسال إشعار التحويل</button>
+
+          <div class="alert-note">
+            تنبيه ذكي: في حالة تأخر التحويل أو اختلاف اسم المرسل، سيتم إرسال تنبيه فوري إلى الإدارة لإعادة التحقق.
+          </div>
+        </form>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
